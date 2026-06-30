@@ -4,9 +4,9 @@
     "description": "",
     "scripts": {
       "browsersync": "browser-sync start --directory --server --files --startPath index.html",
-      "build": "tailwindcss build -i src/styles.css -o assets/css/theme.css",
-      "build-minify": "tailwindcss build -i src/styles.css -o assets/css/theme.min.css --minify",
-      "watch": "npx tailwindcss -i src/styles.css -o assets/css/theme.css --watch"
+      "build": "tailwindcss -i ./styles.css -o ./assets/css/theme.css --minify",
+      "build-minify": "tailwindcss -i ./styles.css -o ./assets/css/theme.min.css --minify",
+      "watch": "tailwindcss -i ./styles.css -o ./assets/css/theme.css --watch"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.2",
